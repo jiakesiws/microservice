@@ -2,14 +2,36 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <parent>
         <artifactId>microservice</artifactId>
         <groupId>com.microservice.cloud</groupId>
         <version>1.0.MV</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>microservice-consumer-dept-8101</artifactId>
+    <description>部门微服务消费者</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.microservice.cloud</groupId>
+            <artifactId>microservice-api</artifactId>
+            <version>1.0.MV</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- 热部署 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>springloaded</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

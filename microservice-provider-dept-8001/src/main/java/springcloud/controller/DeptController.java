@@ -1,11 +1,9 @@
-package com.notfound.springcloud.controller;
+package springcloud.controller;
 
-import com.notfound.springcloud.service.DeptService;
-import com.notfound.springcloud.vo.Dept;
+import springcloud.service.DeptService;
+import springcloud.vo.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import sun.misc.Request;
 
 /**
  * @author 404NotFoundx

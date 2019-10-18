@@ -1,6 +1,6 @@
-package com.notfound.springcloud.mapper;
+package springcloud.mapper;
 
-import com.notfound.springcloud.vo.Dept;
+import springcloud.vo.Dept;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

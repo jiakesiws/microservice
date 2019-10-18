@@ -1,7 +1,7 @@
-package com.notfound.springcloud.service;
+package springcloud.service;
 
-import com.notfound.springcloud.mapper.DeptMapper;
-import com.notfound.springcloud.vo.Dept;
+import springcloud.mapper.DeptMapper;
+import springcloud.vo.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

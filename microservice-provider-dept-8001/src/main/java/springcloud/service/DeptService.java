@@ -1,6 +1,6 @@
-package com.notfound.springcloud.service;
+package springcloud.service;
 
-import com.notfound.springcloud.vo.Dept;
+import springcloud.vo.Dept;
 
 import java.util.List;
 

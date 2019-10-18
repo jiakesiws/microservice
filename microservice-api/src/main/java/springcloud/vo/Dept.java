@@ -1,4 +1,4 @@
-package com.notfound.springcloud.vo;
+package springcloud.vo;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

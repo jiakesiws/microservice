@@ -3,7 +3,7 @@ server:
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml              # mybatis 配置文件所在路径
-  type-aliases-package: com.notfound.springcloud.vo               # 所有 entity 别名所在的包
+  type-aliases-package: springcloud.vo               # 所有 entity 别名所在的包
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml                             # mapper 文件映射路径
 
