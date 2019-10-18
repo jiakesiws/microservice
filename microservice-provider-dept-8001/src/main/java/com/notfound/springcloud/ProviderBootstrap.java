@@ -10,10 +10,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since 1.8
  */
 @SpringBootApplication
-public class WebBootstap {
+public class ProviderBootstrap {
 
     public static void main(String[] args) {
-        SpringApplication.run(WebBootstap.class,args);
+        SpringApplication.run(ProviderBootstrap.class,args);
     }
 
 }
