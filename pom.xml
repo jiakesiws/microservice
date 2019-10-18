@@ -18,6 +18,7 @@
     <modules>
         <module>microservice-api</module>
         <module>microservice-provider-dept-8001</module>
+        <module>microservice-consumer-dept-8101</module>
     </modules>
 
     <properties>
