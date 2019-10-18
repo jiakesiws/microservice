@@ -9,6 +9,10 @@
     <version>1.0.MV</version>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>mincroservice-api</module>
+    </modules>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
