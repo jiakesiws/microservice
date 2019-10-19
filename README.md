@@ -4,13 +4,15 @@
 
 ## 准备环境
 
-在host文件中添加如下内容：
+**在host文件中添加如下内容：**
 ```
 # springcloud
 127.0.0.1 eureka8201.com
 127.0.0.1 eureka8202.com
 127.0.0.1 eureka8203.com
 ```
+
+**添加SQL脚本，在script文件夹中**
 
 ## 普通启动顺序
 
