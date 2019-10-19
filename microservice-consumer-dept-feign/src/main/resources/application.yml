@@ -1,6 +1,10 @@
 server:
   port: 8101
 
+feign:
+  hystrix:
+    enabled: true
+
 eureka:
   client:
     register-with-eureka: false

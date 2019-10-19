@@ -7,14 +7,16 @@ import springcloud.vo.Dept;
 
 import java.util.List;
 
+
 /**
  * @author 404NotFoundx
  * @date 2019/10/19 21:35
  * @version 1.0.0
  * @since 1.8
  */
-@FeignClient(value = "MICROSERVICE-DEPT")
+// @FeignClient(value = "MICROSERVICE-DEPT")
 @RequestMapping("/dept")
+@FeignClient(value = "MICROSERVICE-DEPT",fallbackFactory = DeptClientServiceFallbackFactory.class)
 public interface DeptClientService {
 
     @RequestMapping(value = "/add")
