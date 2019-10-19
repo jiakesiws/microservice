@@ -25,7 +25,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:8201/eureka
+      defaultZone: http://eureka8201.com:8201/eureka/,http://eureka8202.com:8202/eureka/,http://eureka8203.com:8203/eureka/
   instance:
     instance-id: microservice-dept:8001                           # 自定义服务名称
     prefer-ip-address: true                                       # 访问路径显示 IP 地址

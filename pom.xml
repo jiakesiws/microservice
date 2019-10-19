@@ -20,6 +20,8 @@
         <module>microservice-provider-dept-8001</module>
         <module>microservice-consumer-dept-8101</module>
         <module>microservice-eureka-server-8201</module>
+        <module>microservice-eureka-server-8202</module>
+        <module>microservice-eureka-server-8203</module>
     </modules>
 
     <properties>
