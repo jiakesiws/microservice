@@ -20,7 +20,7 @@ import java.util.List;
 @RequestMapping("/consumer/dept")
 public class DeptControllerConsumer {
 
-    private static final String URL_PREFIX = "http://127.0.0.1:8001";
+    private static final String URL_PREFIX = "http://MICROSERVICE-DEPT";
 
     @Autowired
     private RestTemplate restTemplate;

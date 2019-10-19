@@ -14,10 +14,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @EnableEurekaClient
 @EnableDiscoveryClient
 @SpringBootApplication
-public class ProviderBootstrap {
+public class ProviderBootstrap8001 {
 
     public static void main(String[] args) {
-        SpringApplication.run(ProviderBootstrap.class,args);
+        SpringApplication.run(ProviderBootstrap8001.class,args);
     }
 
 }

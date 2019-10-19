@@ -1,0 +1,37 @@
+server:
+  port: 8002
+
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml              # mybatis 配置文件所在路径
+  type-aliases-package: springcloud.vo                            # 所有 entity 别名所在的包
+  mapper-locations:
+  - classpath:mybatis/mapper/**/*.xml                             # mapper 文件映射路径
+
+spring:
+  application:
+    name: microservice-dept
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource                  # 当前数据源操作类型
+    driver-class-name: org.gjt.mm.mysql.Driver                    # mysql 驱动包
+    url: jdbc:mysql://127.0.0.1:3306/cloudDB02                    # 数据库名称
+    username: root
+    password: root
+    dbcp2:
+      min-idle: 5                                                 # 数据库连接池最小维持的连接数
+      initial-size: 5                                             # 初始化连接数
+      max-total: 10                                               # 最大连接数
+      max-wait-millis: 200                                        # 等待连接获取的最大超时时间
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka8201.com:8201/eureka/,http://eureka8202.com:8202/eureka/,http://eureka8203.com:8203/eureka/
+  instance:
+    instance-id: microservice-dept:8002                           # 自定义服务名称
+    prefer-ip-address: true                                       # 访问路径显示 IP 地址
+
+info:
+  app.name: microservice
+  company.name: www.404NotFound.com
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}

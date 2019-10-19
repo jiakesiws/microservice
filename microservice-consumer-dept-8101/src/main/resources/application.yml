@@ -1,2 +1,8 @@
 server:
   port: 8101
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka8201.com:8201/eureka/,http://eureka8202.com:8202/eureka/,http://eureka8203.com:8203/eureka/
