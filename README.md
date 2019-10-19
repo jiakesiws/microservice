@@ -12,6 +12,16 @@
 127.0.0.1 eureka8203.com
 ```
 
+## 启动顺序
+
+- EurekaBootstrap8201
+- EurekaBootstrap8202
+- EurekaBootstrap8203
+- ProviderBootstrap8001
+- ProviderBootstrap8002
+- ProviderBootstrap8003
+- ConsumerFeignBootstrap
+
 ## 其他知识
 
 **ACID**分别是什么？
