@@ -12,6 +12,18 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>microservice-consumer-dept-8101</artifactId>
     <description>部门微服务消费者</description>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <dependency>

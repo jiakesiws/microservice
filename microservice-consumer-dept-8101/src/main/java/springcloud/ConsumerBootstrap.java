@@ -3,6 +3,8 @@ package springcloud;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.ribbon.RibbonClient;
+import springcloud.irule.ISelfRule;
 
 /**
  * @author 404NotFoundx
@@ -11,6 +13,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * @since 1.8
  */
 @EnableEurekaClient
+@RibbonClient(name = "MICROSERVICE-DEPT",configuration = ISelfRule.class)
 @SpringBootApplication
 public class ConsumerBootstrap {
 
