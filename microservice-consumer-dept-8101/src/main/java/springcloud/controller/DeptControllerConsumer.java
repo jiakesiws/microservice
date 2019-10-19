@@ -41,4 +41,9 @@ public class DeptControllerConsumer {
         return restTemplate.getForObject(URL_PREFIX + "/dept/list", List.class);
     }
 
+    @RequestMapping(value = "/discovery")
+    public Object discovery() {
+        return restTemplate.getForObject(URL_PREFIX + "/dept/discovery", Object.class);
+    }
+
 }
