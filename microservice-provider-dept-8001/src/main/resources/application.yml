@@ -29,3 +29,9 @@ eureka:
   instance:
     instance-id: microservice-dept:8001                           # 自定义服务名称
     prefer-ip-address: true                                       # 访问路径显示 IP 地址
+
+info:
+  app.name: microservice
+  company.name: www.404NotFound.com
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}
