@@ -3,7 +3,7 @@ server:
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml              # mybatis 配置文件所在路径
-  type-aliases-package: springcloud.vo               # 所有 entity 别名所在的包
+  type-aliases-package: springcloud.vo                            # 所有 entity 别名所在的包
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml                             # mapper 文件映射路径
 
@@ -26,3 +26,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:8201/eureka
+  instance:
+    instance-id: microservice-dept:8001                           # 自定义服务名称
+    prefer-ip-address: true                                       # 访问路径显示 IP 地址
