@@ -50,6 +50,9 @@ public class IRandomRule extends AbstractLoadBalancerRule {
             // int index = chooseRandomInt(serverCount);
             // server = upList.get(index);
 
+            //
+            // 修改的关键代码在这里
+            //
             if(total < 5){
                 server = upList.get(currentIndex);
                 total++;
@@ -62,6 +65,7 @@ public class IRandomRule extends AbstractLoadBalancerRule {
                 server = upList.get(currentIndex);
                 total = 0;
             }
+            // END 自定义代码结束
 
             if (server == null) {
                 /*
