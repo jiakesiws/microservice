@@ -49,14 +49,14 @@
 所谓降级，一般从整体负荷考虑。就是当某个服务熔断之后，服务器将不再调用，
 此时客户端可以自己准备一个fallback回调，返回一个缺省值。虽然服务水平下降，但好歹可用，比直接挂掉要强。
 
-**ACID**分别是什么？
+**ACID分别是什么**
 
 - A 代表 Aotmicity（原子性）
 - C 代表 Consistency （一致性）
 - I 代表 Isolation （独立性）
 - D 代表 Durability (持久性)
 
-**CAP**又分别是什么？
+**CAP又分别是什么**
 
 - C：Consistency （强一致性）
 - A：Available （可用性）
