@@ -24,6 +24,7 @@
         <module>microservice-eureka-server-8203</module>
         <module>microservice-provider-dept-8002</module>
         <module>microservice-provider-dept-8003</module>
+        <module>microservice-consumer-dept-feign</module>
     </modules>
 
     <properties>
