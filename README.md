@@ -40,6 +40,17 @@
 - ProviderBootstrap8001
 - ConsumerFeignBootstrap
 
+## 服务可视化监控启动顺序
+
+- EurekaBootstrap8201
+- EurekaBootstrap8202
+- EurekaBootstrap8203
+- ProviderBootstrapHystrix8001
+- HystrixDashboardBootstrap
+- ConsumerFeignBootstrap
+
+使用**127.0.0.1:9001/hystrix**打开可视化页面,再在可视化页面的输入框内输入**127.0.0.1:8001/hystrix.stream**即可监控8001服务的西悉尼
+
 ## 其他知识
 
 **服务熔断**
