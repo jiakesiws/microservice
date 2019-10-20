@@ -13,6 +13,11 @@ eureka:
     instance-id: gateway-9527.com
     prefer-ip-address: true
 
+zuul:
+  routes:
+    deptproxy.serviceId: microservice-dept
+    deptproxy.path: /deptproxy/**
+
 info:
   app.name: microservice
   company.name: www.404NotFound.com
