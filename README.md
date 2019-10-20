@@ -10,46 +10,39 @@
 127.0.0.1 eureka8201.com
 127.0.0.1 eureka8202.com
 127.0.0.1 eureka8203.com
+127.0.0.1 zuul.com
+127.0.0.1 config.com
+127.0.0.1 configclient.com
 ```
 
 **添加SQL脚本，在script文件夹中**
 
-## 普通启动顺序
-
-- EurekaBootstrap8201
-- EurekaBootstrap8202
-- EurekaBootstrap8203
-- ProviderBootstrap8001
-- ProviderBootstrap8002
-- ProviderBootstrap8003
-- ConsumerFeignBootstrap
-
-## 服务熔断启动顺序
-
-- EurekaBootstrap8201
-- EurekaBootstrap8202
-- EurekaBootstrap8203
-- ProviderBootstrapHystrix8001
-- ConsumerFeignBootstrap
-
-## 服务降级启动顺序
-
-- EurekaBootstrap8201
-- EurekaBootstrap8202
-- EurekaBootstrap8203
-- ProviderBootstrap8001
-- ConsumerFeignBootstrap
-
-## 服务可视化监控启动顺序
+## 启动顺序
 
 - EurekaBootstrap8201
 - EurekaBootstrap8202
 - EurekaBootstrap8203
 - ProviderBootstrapHystrix8001
 - HystrixDashboardBootstrap
-- ConsumerFeignBootstrap
+- ZuulBootstrap
+- ConfigServerBootstrap
+- ConfigClientBootstrap
+
+**数据可视化界面**
 
 使用**127.0.0.1:9001/hystrix**打开可视化页面,再在可视化页面的输入框内输入**127.0.0.1:8001/hystrix.stream**即可监控8001服务的信息
+
+**三个eureka集群地址**
+
+http://eureka8201.com:8201/
+http://eureka8202.com:8202/
+http://eureka8203.com:8203/
+
+**Rest服务访问地址**
+
+http://127.0.0.1:8101/consumer/dept/get/1
+http://127.0.0.1:8101/consumer/dept/list
+http://127.0.0.1:8101/consumer/dept/add
 
 ## 启动路由
 
