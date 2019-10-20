@@ -1,0 +1,11 @@
+server:
+  port: 3000
+
+spring:
+  application:
+    name: microservice-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:404NotFoundx/microservice-config.git

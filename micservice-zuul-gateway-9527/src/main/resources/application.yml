@@ -14,9 +14,11 @@ eureka:
     prefer-ip-address: true
 
 zuul:
+  prefix: /cnmd                                 # 设置统一前缀
   routes:
     deptproxy.serviceId: microservice-dept
     deptproxy.path: /deptproxy/**
+  ignored-services: "*"                         # 禁止真实服务名访问，如果要禁止所有的使用过 <"*">
 
 info:
   app.name: microservice

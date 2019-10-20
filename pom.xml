@@ -29,6 +29,8 @@
         <module>microservice-provider-dept-hystrix-8001</module>
         <module>microservice-consumer-hystrix-dashboard</module>
         <module>micservice-zuul-gateway-9527</module>
+        <module>microservice-config-server-3000</module>
+        <module>microservice-config-client-8300</module>
     </modules>
 
     <properties>

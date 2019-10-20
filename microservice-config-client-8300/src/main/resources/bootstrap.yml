@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: microservice-config-client        # 从github上读取内容，没有后缀
+      profile: test                           # 访问哪一个配置项
+      label: master                           # 分支
+      uri: http://config.com:3000                    # 通过config server服务，通过config server服务去拿配置A
