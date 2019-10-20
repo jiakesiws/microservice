@@ -48,10 +48,6 @@ http://127.0.0.1:8101/consumer/dept/list
 http://127.0.0.1:8101/consumer/dept/add
 ```
 
-## 启动路由
-
-- ZuulBootstrap
-
 ## 其他知识
 
 **服务熔断**
