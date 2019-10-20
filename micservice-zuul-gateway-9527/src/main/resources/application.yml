@@ -1,0 +1,20 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: microservice-zuul-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka8201.com:8201/eureka/,http://eureka8202.com:8202/eureka/,http://eureka8203.com:8203/eureka/
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true
+
+info:
+  app.name: microservice
+  company.name: www.404NotFound.com
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}
