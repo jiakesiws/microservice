@@ -34,15 +34,19 @@
 
 **三个eureka集群地址**
 
+```
 http://eureka8201.com:8201/
 http://eureka8202.com:8202/
 http://eureka8203.com:8203/
+```
 
 **Rest服务访问地址**
 
+```
 http://127.0.0.1:8101/consumer/dept/get/1
 http://127.0.0.1:8101/consumer/dept/list
 http://127.0.0.1:8101/consumer/dept/add
+```
 
 ## 启动路由
 
